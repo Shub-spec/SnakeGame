@@ -11,6 +11,9 @@ let score = 0;
 let highScore = localStorage.getItem('snakeHighScore') || 0;
 let gameLoop;
 let nextDirection = { dx: 1, dy: 0 };
+document.addEventListener('touchmove', function (e) {
+  e.preventDefault();
+}, { passive: false });
 
 document.getElementById('highScore').textContent = highScore;
 
