@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    background: url("background.png") no-repeat center center fixed;
+    background-size: cover;
+  }
+  
+  h1 {
+    margin-top: 20px;
+    font-size: 9vw;
+    color: #ff404d;
+    text-align: center;
+    font-family: 'Bubblegum Sans', cursive;
+  }
+  
+  #scorePanel {
+    margin: 20px;
+    font-size: 5vw;
+    font-family: 'Bubblegum Sans', cursive;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    background: rgba(255,255,255,0.2);
+    padding: 10px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+  }
+  
+  #gameContainer {
+    position: relative;
+    width: 90vmin;
+    height: 90vmin;
+    max-width: 400px;
+    max-height: 400px;
+    margin: 20px auto;
+  }
+  
+  #gameBoard {
+    width: 100%;
+    height: 100%;
+    background: #111;
+    border: 7px solid #ffeb3b;
+    border-radius: 10px;
+  }
+  
+  .game-over {
+    width: max-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 7vw;
+    font-family: 'Comic Neue', cursive;
+    color: #ff1744;
+    display: none;
+    text-align: center;
+  }
+  
+  button {
+    padding: 10px 24px;
+    background: #ffeb3b;
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    font-size: 4vw;
+    font-family: 'Comic Neue', cursive;
+    cursor: pointer;
+    margin: 20px;
+    transition: 0.3s ease;
+  }
+  
+  button:hover {
+    background: #ffee58;
+    transform: scale(1.05);
+  }
+  
+  @media (min-width: 600px) {
+    h1 {
+      font-size: 48px;
+    }
+  
+    #scorePanel {
+      font-size: 24px;
+    }
+  
+    .game-over {
+      font-size: 36px;
+    }
+  
+    button {
+      font-size: 20px;
+    }
+  }
+  
